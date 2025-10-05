@@ -2,13 +2,12 @@
 import './App.css'
 import ControlledForm from './components/ControlledForm/ControlledForm'
 import FormAction from './components/FormAction/FormAction'
-import MealDb from './components/MealDb/MealDb'
+import HookForm from './components/HookForm/HookForm'
+import ProductManagment from './components/ProductManagment/ProductManagment'
 import SimpleForm from './components/SimpleForm/SimpleForm'
 import UncontrolledForm from './components/UncontrolledForm/UncontrolledForm'
 
 
-const mealPromise = fetch("https://www.themealdb.com/api/json/v1/1/random.php").then(res => res.json())
-// console.log(mealPromise);
 
 
 function App() {
@@ -19,7 +18,8 @@ function App() {
       {/* <FormAction></FormAction> */}
       {/* <ControlledForm></ControlledForm> */}
       {/* <UncontrolledForm></UncontrolledForm> */}
-      <MealDb mealPromise={mealPromise}></MealDb>
+      {/* <HookForm></HookForm> */}
+      <ProductManagment></ProductManagment>
     </>
   )
 }
